@@ -80,8 +80,8 @@ es el caso donde el greedy falla (ver `GET /api/paquetes/greedy`).
 | Nombre y apellido | Usuario de GitHub | Legajo |
 |-------------------|-------------------|--------|
 | `Acosta Gonzalo` | `gonzaloacosta5` | `1173449` |
-| `Lopez Bautista` | `[COMPLETAR]` | `1172886` |
-| `Margets Lucas` | `[COMPLETAR]` | `1171541` |
+| `Lopez Bautista` | `bautilopezl` | `1172886` |
+| `Margets Lucas` | `LucasMargets11` | `1171541` |
 
 ## Cómo ejecutarlo
 
