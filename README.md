@@ -79,9 +79,9 @@ es el caso donde el greedy falla (ver `GET /api/paquetes/greedy`).
 
 | Nombre y apellido | Usuario de GitHub | Legajo |
 |-------------------|-------------------|--------|
-| `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
-| `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
-| `[COMPLETAR]` | `[COMPLETAR]` | `[COMPLETAR]` |
+| `Acosta Gonzalo` | `gonzaloacosta5` | `1173449` |
+| `Lopez Bautista` | `bautilopezl` | `1172886` |
+| `Margets Lucas` | `LucasMargets11` | `1171541` |
 
 ## Cómo ejecutarlo
 
