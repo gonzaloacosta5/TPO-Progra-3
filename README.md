@@ -74,9 +74,6 @@ es el caso donde el greedy falla (ver `GET /api/paquetes/greedy`).
 
 ## Integrantes
 
-> **Completar antes de entregar.** La rúbrica pide nombre y apellido completos y usuario de GitHub de cada integrante,
-> y que el historial de commits muestre a todos.
-
 | Nombre y apellido | Usuario de GitHub | Legajo |
 |-------------------|-------------------|--------|
 | `Acosta Gonzalo` | `gonzaloacosta5` | `1173449` |
@@ -85,10 +82,8 @@ es el caso donde el greedy falla (ver `GET /api/paquetes/greedy`).
 
 ## Cómo ejecutarlo
 
-Requisitos: JDK 21, Docker (para Neo4j) y Maven (o el wrapper `./mvnw`).
-
-> **El wrapper de Maven no está incluido.** Copiá `mvnw`, `mvnw.cmd` y la carpeta `.mvn/` del esqueleto de la cátedra,
-> o generalo una vez con `mvn wrapper:wrapper`.
+Requisitos: JDK 21 y Docker (para Neo4j). No hace falta instalar Maven: el wrapper `./mvnw` (en Windows, `mvnw.cmd`)
+lo descarga la primera vez.
 
 1. **Credenciales (nunca en el repositorio).** Copiá la plantilla y completá usuario y contraseña de Neo4j
    (la contraseña debe tener 8 caracteres o más):
@@ -125,6 +120,11 @@ Requisitos: JDK 21, Docker (para Neo4j) y Maven (o el wrapper `./mvnw`).
    ```bash
    ./mvnw test
    ```
+
+5. **Probar los endpoints con Postman** (opcional): importá
+   [`docs/postman/TPO-Logistica-Perfumeria.postman_collection.json`](docs/postman/TPO-Logistica-Perfumeria.postman_collection.json)
+   y ejecutá la colección con *Run collection*. Tiene una request por endpoint, casos de error y tests que verifican los
+   resultados de la semilla.
 
 Si Neo4j está caído, la API responde `503` con un mensaje claro (no un stack trace); si falta `NEO4J_USERNAME` o
 `NEO4J_PASSWORD`, la aplicación no arranca y el log indica qué propiedad no se pudo resolver.
@@ -216,4 +216,3 @@ Cada algoritmo tiene su ficha en **[docs/ENDPOINTS.md](docs/ENDPOINTS.md)**: par
 - Los endpoints devuelven errores manejados con un cuerpo uniforme; nunca stack traces ni mensajes internos.
 - Las búsquedas exhaustivas (backtracking y branch & bound) tienen un tope de nodos explorados; al superarlo responden
   `422` en lugar de dejar el servidor colgado.
-"# TPO-Progra-3" 
